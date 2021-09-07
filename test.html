@@ -1,2 +1,12 @@
-<h1>test updated 2</h1>
-<a href="com.corsair.icue.mobile://qr?d=caspian&p=c3NpZD1DQVNQSUFOX1dJRkk">com.corsair.icue.mobile://qr?d=caspian&p=c3NpZD1DQVNQSUFOX1dJRkk</a>
+<h1>test data</h1>
+<a href="com.corsair.icue.mobile://qr?p=ZD1jYXNwaWFuJnNzaWQ9Q2FzcGlhbl8xMjM">open app</a>
+<br><br>
+<label id="lbltipAddedComment1">test</label>
+<br>
+<label id="lbltipAddedComment">test</label>
+<script>
+  var fingerprint = window.navigator.platform + window.screen.availWidth + '_' + window.screen.availHeight + (new Date()).getTimezoneOffset().toString() +  window.navigator.language
+  document.getElementById('lbltipAddedComment1').innerHTML = fingerprint.toLowerCase();
+  
+  document.getElementById('lbltipAddedComment').innerHTML = window.navigator.platform + '<br>' + window.screen.availWidth + '_' + window.screen.availHeight + '<br>' + (new Date()).getTimezoneOffset().toString() + '<br>' + window.navigator.language;
+</script>
