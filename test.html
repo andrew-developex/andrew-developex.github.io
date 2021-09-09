@@ -3,10 +3,12 @@
 <br><br>
 <label id="lbltipAddedComment1">test</label>
 <br>
+<label id="lbltipAddedComment2">test</label>
+<br>
 <label id="lbltipAddedComment">test</label>
 <script>
   var fingerprint = window.navigator.platform + window.screen.availWidth + '_' + window.screen.availHeight + (new Date()).getTimezoneOffset().toString() +  window.navigator.language
   document.getElementById('lbltipAddedComment1').innerHTML = fingerprint.toLowerCase();
-  
+    document.getElementById('lbltipAddedComment2').innerHTML = 'languages:  ' + window.navigator.languages;
   document.getElementById('lbltipAddedComment').innerHTML = window.navigator.platform + '<br>' + window.screen.availWidth + '_' + window.screen.availHeight + '<br>' + (new Date()).getTimezoneOffset().toString() + '<br>' + window.navigator.language;
 </script>
